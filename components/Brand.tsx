@@ -66,7 +66,7 @@ export function WelcomeBadge({
   inverted?: boolean;
 }) {
   return (
-    <span className={inverted ? "welcome-pill bg-paper text-charcoal" : "welcome-pill"}>
+    <span className={inverted ? "welcome-pill is-light" : "welcome-pill"}>
       {children}
       <ArrowCircle tone="cyan" size="sm" />
     </span>

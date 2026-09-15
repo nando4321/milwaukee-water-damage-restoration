@@ -27,7 +27,7 @@ export function Header() {
   const [servicesOpen, setServicesOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 border-t-[6px] border-navy bg-white shadow-[0_1px_0_#eee]">
+    <header className="sticky top-0 z-50 border-t-8 border-navy bg-white shadow-[0_1px_0_#eee]">
       <div className="flex items-center justify-between gap-4 px-4 py-3 lg:px-8">
         <Logo compact />
         <nav className="hidden items-center gap-7 xl:flex" aria-label="Primary">

@@ -65,6 +65,8 @@ body {
 
 .cyan-bar {
   display: inline-block;
+  width: fit-content;
+  max-width: 100%;
   background: #1bbdff;
   color: #061e60;
   font-weight: 800;
@@ -76,6 +78,8 @@ body {
 
 .welcome-pill {
   display: inline-flex;
+  width: fit-content;
+  max-width: 100%;
   align-items: center;
   gap: 0.7rem;
   border-radius: 999px;
@@ -87,6 +91,11 @@ body {
   text-transform: uppercase;
   padding: 0.35rem 0.4rem 0.35rem 1rem;
   backdrop-filter: blur(6px);
+}
+
+.welcome-pill.is-light {
+  background: #f2f2f2;
+  color: #262626;
 }
 
 .prose-restore p {
