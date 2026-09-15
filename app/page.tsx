@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { CtaLink, CyanBar, WelcomeBadge } from "@/components/Brand";
 import { AreaMap, CityGrid } from "@/components/CityGrid";
+import { ContactForm } from "@/components/ContactForm";
 import { EmergencyBand } from "@/components/CtaBanner";
 import { Gallery } from "@/components/Gallery";
 import { ReviewsPlaceholder } from "@/components/ReviewsPlaceholder";
@@ -10,32 +11,37 @@ import { coreValues } from "@/lib/site";
 export default function HomePage() {
   return (
     <>
-      <section className="relative isolate min-h-[86vh] overflow-hidden bg-black">
-        <Image
-          src="/images/hero.jpg"
-          alt="Placeholder hero image for a water-damaged interior in Greater Milwaukee"
-          fill
-          priority
-          className="object-cover"
-          sizes="100vw"
-        />
-        <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/50 to-transparent" />
-        <div className="container-site relative flex min-h-[86vh] flex-col justify-end pb-20 pt-24">
-          <WelcomeBadge>Welcome to Milwaukee Water Damage Restoration</WelcomeBadge>
-          <h1 className="display mt-6 max-w-5xl text-[46px] text-white md:text-[78px]">
-            Milwaukee’s #1 water damage restoration team
-          </h1>
-          <p className="mt-6 max-w-2xl text-lg leading-8 text-white/80">
-            When water hits a home or business, the next steps matter. We handle
-            extraction, drying, moisture tracking, mold tied to water, and rebuilding
-            across Milwaukee County and Waukesha County.
-          </p>
-          <div className="mt-8 flex flex-wrap gap-3">
-            <CtaLink href="/contact">Request emergency help</CtaLink>
-            <CtaLink href="/services" variant="white">
-              See our services
-            </CtaLink>
+      <section className="relative isolate bg-black">
+        <div className="absolute inset-0 overflow-hidden">
+          <Image
+            src="/images/hero.jpg"
+            alt="Placeholder hero image for a water-damaged interior in Greater Milwaukee"
+            fill
+            priority
+            className="object-cover"
+            sizes="100vw"
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-black/85 via-black/65 to-black/40" />
+        </div>
+        <div className="container-site relative grid items-center gap-10 py-14 lg:min-h-[calc(100vh-6.5rem)] lg:grid-cols-[minmax(0,1.15fr)_minmax(280px,420px)] lg:py-16">
+          <div>
+            <WelcomeBadge>Welcome to Milwaukee Water Damage Restoration</WelcomeBadge>
+            <h1 className="display mt-6 max-w-5xl text-[40px] text-white md:text-[64px] xl:text-[72px]">
+              Milwaukee’s #1 water damage restoration team
+            </h1>
+            <p className="mt-6 max-w-2xl text-lg leading-8 text-white/80">
+              When water hits a home or business, the next steps matter. We handle
+              extraction, drying, moisture tracking, mold tied to water, and rebuilding
+              across Milwaukee County and Waukesha County.
+            </p>
+            <div className="mt-8 flex flex-wrap gap-3">
+              <CtaLink href="#hero-estimate">Request emergency help</CtaLink>
+              <CtaLink href="/services" variant="white">
+                See our services
+              </CtaLink>
+            </div>
           </div>
+          <ContactForm id="hero-estimate" variant="compact" />
         </div>
       </section>
 

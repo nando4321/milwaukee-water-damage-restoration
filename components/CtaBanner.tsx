@@ -24,19 +24,18 @@ export function CtaBanner({
 
 export function EmergencyBand() {
   return (
-    <section className="relative isolate overflow-hidden bg-black">
-      <div className="absolute inset-x-0 -top-6 z-10 flex justify-center">
-        <CtaLink href="/contact">Get emergency help now</CtaLink>
+    <section className="relative isolate bg-black">
+      <div className="absolute inset-0 overflow-hidden">
+        <Image
+          src="/images/hero.jpg"
+          alt="Placeholder photo for 24-hour water emergency response"
+          fill
+          className="object-cover"
+          sizes="100vw"
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-black/85 via-black/55 to-black/25" />
       </div>
-      <Image
-        src="/images/hero.jpg"
-        alt="Placeholder photo for 24-hour water emergency response"
-        fill
-        className="object-cover"
-        sizes="100vw"
-      />
-      <div className="absolute inset-0 bg-gradient-to-r from-black/85 via-black/55 to-black/25" />
-      <div className="container-site relative min-h-[520px] py-24">
+      <div className="container-site relative flex min-h-[520px] flex-col items-start justify-end pb-20 pt-16">
         <WelcomeBadge>Welcome to Milwaukee Water Damage Restoration</WelcomeBadge>
         <h2 className="display mt-8 max-w-3xl text-[42px] text-white md:text-[68px]">
           Emergency restoration services

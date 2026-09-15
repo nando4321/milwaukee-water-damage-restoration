@@ -50,7 +50,7 @@ export function CtaLink({
   return (
     <Link
       href={href}
-      className={`inline-flex items-center gap-3 rounded-full py-1.5 pr-1.5 pl-5 text-[13px] font-extrabold uppercase tracking-[0.06em] transition ${variants[variant]} ${className}`}
+      className={`inline-flex w-fit items-center gap-3 rounded-full py-1.5 pr-1.5 pl-5 text-[13px] font-extrabold uppercase tracking-[0.06em] transition ${variants[variant]} ${className}`}
     >
       {children}
       <ArrowCircle tone={arrow} />
