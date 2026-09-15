@@ -1,0 +1,117 @@
+@import "tailwindcss";
+
+:root {
+  --navy: #061e60;
+  --navy-deep: #041448;
+  --navy-mid: #0a2a7a;
+  --cyan: #1bbdff;
+  --cyan-hover: #49cbff;
+  --ink: #1c2433;
+  --muted: #5c6778;
+  --paper: #f3f6fb;
+  --line: #d5deea;
+  --background: #ffffff;
+  --foreground: #1c2433;
+}
+
+@theme inline {
+  --color-navy: var(--navy);
+  --color-navy-deep: var(--navy-deep);
+  --color-navy-mid: var(--navy-mid);
+  --color-cyan: var(--cyan);
+  --color-cyan-hover: var(--cyan-hover);
+  --color-ink: var(--ink);
+  --color-muted: var(--muted);
+  --color-paper: var(--paper);
+  --color-line: var(--line);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-outfit);
+  --font-display: var(--font-outfit);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-outfit), ui-sans-serif, system-ui, sans-serif;
+  font-feature-settings: "ss01" on;
+}
+
+::selection {
+  background: #1bbdff;
+  color: #041448;
+}
+
+.container-site {
+  width: min(1120px, calc(100% - 2rem));
+  margin-inline: auto;
+}
+
+.container-wide {
+  width: min(1200px, calc(100% - 2rem));
+  margin-inline: auto;
+}
+
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--cyan);
+}
+
+.section-title {
+  font-size: clamp(1.75rem, 3.4vw, 2.75rem);
+  line-height: 1.12;
+  font-weight: 600;
+  letter-spacing: -0.03em;
+  color: var(--navy);
+}
+
+.prose-restore p {
+  color: var(--muted);
+  line-height: 1.75;
+}
+
+.prose-restore ul {
+  display: grid;
+  gap: 0.65rem;
+}
+
+.prose-restore li {
+  position: relative;
+  padding-left: 1.7rem;
+  color: var(--ink);
+  line-height: 1.55;
+}
+
+.prose-restore li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.35rem;
+  width: 1.05rem;
+  height: 1.05rem;
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--cyan) 18%, white);
+  box-shadow: inset 0 0 0 1.5px var(--cyan);
+}
+
+.prose-restore li::after {
+  content: "";
+  position: absolute;
+  left: 0.32rem;
+  top: 0.58rem;
+  width: 0.42rem;
+  height: 0.24rem;
+  border-left: 2px solid var(--navy);
+  border-bottom: 2px solid var(--navy);
+  transform: rotate(-45deg);
+}
