@@ -35,7 +35,7 @@ export function EmergencyBand() {
         />
         <div className="absolute inset-0 bg-gradient-to-r from-black/85 via-black/55 to-black/25" />
       </div>
-      <div className="container-site relative flex min-h-[520px] flex-col justify-end pb-20 pt-16">
+      <div className="container-site relative flex min-h-[520px] flex-col items-start justify-end pb-20 pt-16">
         <WelcomeBadge>Welcome to Milwaukee Water Damage Restoration</WelcomeBadge>
         <h2 className="display mt-8 max-w-3xl text-[42px] text-white md:text-[68px]">
           Emergency restoration services
