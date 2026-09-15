@@ -47,17 +47,20 @@ npm start
 
 ## Placeholder images
 
-Files in `public/images/` use stable names so photography can be swapped later without code changes:
+Files in `public/images/` use the ChatGPT-approved filenames so New Bot can drop in final JPGs without code changes:
 
 - `hero.jpg`
 - `water-extraction.jpg`
 - `drying-equipment.jpg`
+- `moisture-inspection.jpg`
 - `mold-remediation.jpg`
 - `rebuild.jpg`
 - `milwaukee-skyline.jpg`
 - `waukesha-street.jpg`
-- `gallery-1.jpg` … `gallery-6.jpg`
-- `about-crew.jpg`, `office.jpg`, `og.jpg`
+- `gallery-1.jpg`
+- `gallery-2.jpg`
+- `gallery-3.jpg`
+- `gallery-4.jpg`
 
 Regenerate labeled placeholders (requires Python + Pillow):
 

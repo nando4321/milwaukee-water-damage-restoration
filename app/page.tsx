@@ -77,8 +77,8 @@ export default function HomePage() {
           </div>
           <div className="relative aspect-[4/5] overflow-hidden border-[10px] border-cyan md:aspect-[5/6]">
             <Image
-              src="/images/about-crew.jpg"
-              alt="Placeholder photo representing a local restoration crew"
+              src="/images/moisture-inspection.jpg"
+              alt="Moisture inspection on a water damage job"
               fill
               className="object-cover"
               sizes="(min-width: 1024px) 45vw, 100vw"

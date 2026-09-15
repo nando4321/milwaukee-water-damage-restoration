@@ -83,7 +83,7 @@ export default function MoldPage() {
         <div className="container-site grid items-center gap-10 py-16 lg:grid-cols-2">
           <div className="relative aspect-[4/3] overflow-hidden">
             <Image
-              src="/images/drying-equipment.jpg"
+              src="/images/moisture-inspection.jpg"
               alt="Placeholder photo of moisture tracking equipment"
               fill
               className="object-cover"

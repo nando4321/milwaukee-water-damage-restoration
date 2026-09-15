@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     title: "Greater Milwaukee’s water damage restoration team",
     description:
       "Extraction, drying, water-related mold remediation, and rebuilds across Milwaukee County and Waukesha County.",
-    images: [{ url: "/images/og.jpg", width: 1200, height: 630, alt: site.name }],
+    images: [{ url: "/images/hero.jpg", width: 1200, height: 630, alt: site.name }],
   },
   robots: {
     index: true,

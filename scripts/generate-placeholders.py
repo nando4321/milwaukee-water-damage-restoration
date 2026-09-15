@@ -88,16 +88,14 @@ SPECS: list[tuple] = [
     ("hero.jpg", (1920, 1100), (46, 78, 118), (92, 138, 176), (28, 44, 68), "Hero · water damage interior", (210, 226, 240)),
     ("water-extraction.jpg", (1400, 933), (36, 88, 128), (70, 150, 188), (22, 52, 74), "Water extraction", (170, 220, 240)),
     ("drying-equipment.jpg", (1400, 933), (72, 78, 88), (140, 148, 156), (40, 44, 50), "Drying equipment", (230, 230, 230)),
+    ("moisture-inspection.jpg", (1400, 933), (54, 72, 110), (96, 122, 168), (30, 40, 62), "Moisture inspection", (210, 220, 240)),
     ("mold-remediation.jpg", (1400, 933), (48, 86, 70), (88, 140, 108), (28, 48, 38), "Mold remediation", (190, 220, 190)),
     ("rebuild.jpg", (1400, 933), (120, 92, 64), (196, 154, 98), (68, 48, 32), "Rebuild after water damage", (240, 214, 170)),
     ("milwaukee-skyline.jpg", (1600, 1000), (58, 92, 150), (110, 156, 210), (24, 40, 72), "Milwaukee skyline", (200, 220, 250)),
     ("waukesha-street.jpg", (1600, 1000), (96, 100, 104), (168, 172, 176), (52, 54, 58), "Waukesha County street", (230, 230, 230)),
-    ("about-crew.jpg", (1400, 933), (54, 72, 110), (96, 122, 168), (30, 40, 62), "Local restoration crew", (210, 220, 240)),
-    ("office.jpg", (1400, 933), (110, 114, 120), (186, 190, 196), (58, 60, 64), "Brookfield office", (235, 235, 235)),
-    ("og.jpg", (1200, 630), (20, 48, 102), (36, 92, 160), (10, 24, 56), "Milwaukee Water Damage Restoration", (160, 200, 240)),
 ]
 
-for i in range(1, 7):
+for i in range(1, 5):
     SPECS.append(
         (
             f"gallery-{i}.jpg",

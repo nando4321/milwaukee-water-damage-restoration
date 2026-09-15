@@ -19,8 +19,8 @@ export default function AboutPage() {
         eyebrow="About the company"
         title="A local water restoration team for Greater Milwaukee"
         bar="Built on field work and clear job scopes"
-        image="/images/about-crew.jpg"
-        imageAlt="Placeholder photo representing a local restoration crew"
+        image="/images/moisture-inspection.jpg"
+        imageAlt="Moisture inspection on a water damage job"
       />
       <section className="bg-white">
         <div className="container-wide grid items-center gap-12 py-20 lg:grid-cols-2">
@@ -44,8 +44,8 @@ export default function AboutPage() {
           </div>
           <div className="relative aspect-[4/3] overflow-hidden border-[10px] border-cyan">
             <Image
-              src="/images/office.jpg"
-              alt="Placeholder photo for the Brookfield office"
+              src="/images/waukesha-street.jpg"
+              alt="Waukesha County street near the Brookfield office"
               fill
               className="object-cover"
               sizes="(min-width: 1024px) 50vw, 100vw"

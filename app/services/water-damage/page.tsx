@@ -37,8 +37,8 @@ const blocks = [
   },
   {
     title: "Material removal when drying is not enough",
-    image: "/images/gallery-3.jpg",
-    alt: "Placeholder photo for material removal",
+    image: "/images/moisture-inspection.jpg",
+    alt: "Placeholder photo for moisture inspection",
     lead: "Taking out what cannot be saved",
     points: [
       "Selective demolition of saturated drywall and flooring",

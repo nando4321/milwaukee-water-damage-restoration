@@ -6,7 +6,7 @@ export function JsonLd() {
     "@type": "HomeAndConstructionBusiness",
     name: site.name,
     url: site.url,
-    image: `${site.url}/images/og.jpg`,
+    image: `${site.url}/images/hero.jpg`,
     address: {
       "@type": "PostalAddress",
       streetAddress: site.address.street,

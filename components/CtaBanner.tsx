@@ -29,7 +29,7 @@ export function EmergencyBand() {
         <CtaLink href="/contact">Get emergency help now</CtaLink>
       </div>
       <Image
-        src="/images/about-crew.jpg"
+        src="/images/hero.jpg"
         alt="Placeholder photo for 24-hour water emergency response"
         fill
         className="object-cover"

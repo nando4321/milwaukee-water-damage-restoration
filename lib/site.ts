@@ -142,10 +142,8 @@ export const faqs = [
 ] as const;
 
 export const galleryItems = [
-  { src: "/images/gallery-1.jpg", alt: "Placeholder project photo 1 — water mitigation interior" },
-  { src: "/images/gallery-2.jpg", alt: "Placeholder project photo 2 — structural drying" },
-  { src: "/images/gallery-3.jpg", alt: "Placeholder project photo 3 — material removal" },
-  { src: "/images/gallery-4.jpg", alt: "Placeholder project photo 4 — rebuild in progress" },
-  { src: "/images/gallery-5.jpg", alt: "Placeholder project photo 5 — finished room after water damage" },
-  { src: "/images/gallery-6.jpg", alt: "Placeholder project photo 6 — commercial water job" },
+  { src: "/images/gallery-1.jpg", alt: "Project gallery photo 1" },
+  { src: "/images/gallery-2.jpg", alt: "Project gallery photo 2" },
+  { src: "/images/gallery-3.jpg", alt: "Project gallery photo 3" },
+  { src: "/images/gallery-4.jpg", alt: "Project gallery photo 4" },
 ] as const;
