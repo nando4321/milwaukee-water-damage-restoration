@@ -11,17 +11,17 @@ import { coreValues, site } from "@/lib/site";
 export default function HomePage() {
   return (
     <>
-      <section className="relative isolate overflow-hidden bg-navy-deep">
+      <section className="relative isolate min-h-[78vh] overflow-hidden bg-navy-deep">
         <Image
           src="/images/hero.jpg"
           alt="Placeholder hero image for a water-damaged interior in Greater Milwaukee"
           fill
           priority
-          className="object-cover opacity-40"
+          className="object-cover"
           sizes="100vw"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-navy-deep via-navy/85 to-navy/40" />
-        <div className="container-site relative py-24 md:py-32">
+        <div className="absolute inset-0 bg-gradient-to-r from-navy-deep/95 via-navy-deep/72 to-navy/30" />
+        <div className="container-site relative py-24 md:py-28">
           <p className="eyebrow">Serving Milwaukee and Greater Milwaukee</p>
           <h1 className="mt-5 max-w-4xl text-4xl font-semibold tracking-tight text-white md:text-6xl">
             Milwaukee’s #1 water damage restoration team
@@ -42,8 +42,8 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="bg-white">
-        <div className="container-site -mt-8 pb-8">
+      <section className="relative z-10 bg-white">
+        <div className="container-site -mt-10 pb-10">
           <TrustChips />
         </div>
       </section>

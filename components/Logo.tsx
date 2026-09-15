@@ -10,8 +10,8 @@ export function Logo({ variant = "dark", compact = false }: LogoProps) {
   const sub = variant === "light" ? "text-white/70" : "text-navy/65";
 
   return (
-    <Link href="/" className="group flex items-center gap-3" aria-label="Milwaukee Water Damage Restoration home">
-      <span className="relative flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-navy text-cyan shadow-[inset_0_0_0_2px_rgba(27,189,255,0.35)]">
+    <Link href="/" className="group flex items-center gap-2.5" aria-label="Milwaukee Water Damage Restoration home">
+      <span className="relative flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-navy text-cyan shadow-[inset_0_0_0_2px_rgba(27,189,255,0.35)]">
         <svg viewBox="0 0 32 32" className="h-6 w-6" aria-hidden="true">
           <path
             d="M16 5c-4.8 6.2-8 10.2-8 13.4 0 4.3 3.6 7.6 8 7.6s8-3.3 8-7.6C24 15.2 20.8 11.2 16 5Z"
@@ -23,10 +23,10 @@ export function Logo({ variant = "dark", compact = false }: LogoProps) {
           />
         </svg>
       </span>
-      <span className={`leading-none ${text}`}>
-        <span className="block text-[11px] font-semibold uppercase tracking-[0.18em]">Milwaukee</span>
-        <span className="mt-1 block text-[15px] font-semibold tracking-tight">
-          Water Damage Restoration
+      <span className={`min-w-0 leading-none ${text}`}>
+        <span className="block text-[10px] font-semibold uppercase tracking-[0.2em]">Milwaukee</span>
+        <span className="mt-1 block whitespace-nowrap text-[15px] font-semibold tracking-tight">
+          {compact ? "Water Restoration" : "Water Damage Restoration"}
         </span>
         {compact ? null : (
           <span className={`mt-1 block text-[11px] font-medium tracking-[0.08em] ${sub}`}>

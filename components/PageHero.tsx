@@ -21,10 +21,10 @@ export function PageHero({
         alt={imageAlt}
         fill
         priority
-        className="object-cover opacity-35"
+        className="object-cover"
         sizes="100vw"
       />
-      <div className="absolute inset-0 bg-gradient-to-r from-navy-deep via-navy-deep/90 to-navy/50" />
+      <div className="absolute inset-0 bg-gradient-to-r from-navy-deep/94 via-navy-deep/75 to-navy/40" />
       <div className="container-site relative py-20 md:py-28">
         <p className="eyebrow">{eyebrow}</p>
         <h1 className="mt-4 max-w-3xl text-4xl font-semibold tracking-tight text-white md:text-5xl">

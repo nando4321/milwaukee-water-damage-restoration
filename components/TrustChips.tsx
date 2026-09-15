@@ -27,10 +27,10 @@ export function TrustChips({ inverted = false }: { inverted?: boolean }) {
       {chips.map((chip) => (
         <div
           key={chip.title}
-          className={`flex items-center gap-3 rounded-xl border px-4 py-4 ${
+          className={`flex items-center gap-3 rounded-xl border px-4 py-4 shadow-md ${
             inverted
-              ? "border-white/15 bg-white/5 text-white"
-              : "border-line bg-white text-navy shadow-sm"
+              ? "border-white/15 bg-white/5 text-white shadow-none"
+              : "border-line bg-white text-navy"
           }`}
         >
           <CheckIcon />
