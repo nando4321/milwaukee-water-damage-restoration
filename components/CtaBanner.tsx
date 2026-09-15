@@ -1,4 +1,5 @@
-import { Button } from "@/components/Button";
+import Image from "next/image";
+import { CtaLink, CyanBar, WelcomeBadge } from "@/components/Brand";
 import { site } from "@/lib/site";
 
 export function CtaBanner({
@@ -10,15 +11,12 @@ export function CtaBanner({
 }) {
   return (
     <section className="bg-navy">
-      <div className="container-site flex flex-col items-start justify-between gap-6 py-14 md:flex-row md:items-center">
+      <div className="container-site flex flex-col items-start justify-between gap-6 py-12 md:flex-row md:items-center">
         <div className="max-w-2xl">
-          <h2 className="text-3xl font-semibold tracking-tight text-white md:text-4xl">{title}</h2>
+          <h2 className="display text-3xl text-white md:text-4xl">{title}</h2>
           <p className="mt-3 text-white/75">{body}</p>
         </div>
-        <div className="flex flex-col items-start gap-3">
-          <Button href="/contact">Request an estimate</Button>
-          <p className="text-sm text-cyan">{site.phoneLabel}</p>
-        </div>
+        <CtaLink href="/contact">Request an estimate</CtaLink>
       </div>
     </section>
   );
@@ -26,31 +24,33 @@ export function CtaBanner({
 
 export function EmergencyBand() {
   return (
-    <section className="bg-navy-deep">
-      <div className="container-wide grid gap-10 py-16 lg:grid-cols-2">
-        <div>
-          <p className="eyebrow">Available 24 hours a day</p>
-          <h2 className="mt-3 text-3xl font-semibold tracking-tight text-white md:text-4xl">
-            Water emergencies do not wait for business hours
-          </h2>
-          <p className="mt-4 max-w-xl text-white/70">
-            A burst pipe, failed sump, or backed-up drain can soak floors and walls overnight.
-            Request help through the form any time. A dedicated phone line is coming soon —
-            until then, the estimate form is the fastest way to reach the team.
-          </p>
-        </div>
-        <div className="rounded-2xl border border-white/10 bg-white/5 p-8">
-          <p className="text-sm font-semibold uppercase tracking-[0.16em] text-cyan">
-            24-hour request line
-          </p>
-          <p className="mt-3 text-3xl font-semibold text-white">{site.phoneLabel}</p>
-          <p className="mt-3 text-white/65">
-            Office: {site.address.line}
-          </p>
-          <Button href="/contact" className="mt-6">
-            Send an emergency request
-          </Button>
-        </div>
+    <section className="relative isolate overflow-hidden bg-black">
+      <div className="absolute inset-x-0 -top-6 z-10 flex justify-center">
+        <CtaLink href="/contact">Get emergency help now</CtaLink>
+      </div>
+      <Image
+        src="/images/about-crew.jpg"
+        alt="Placeholder photo for 24-hour water emergency response"
+        fill
+        className="object-cover"
+        sizes="100vw"
+      />
+      <div className="absolute inset-0 bg-gradient-to-r from-black/85 via-black/55 to-black/25" />
+      <div className="container-site relative min-h-[520px] py-24">
+        <WelcomeBadge>Welcome to Milwaukee Water Damage Restoration</WelcomeBadge>
+        <h2 className="display mt-8 max-w-3xl text-[42px] text-white md:text-[68px]">
+          Emergency restoration services
+        </h2>
+        <CyanBar className="mt-6 text-[16px] md:text-[20px]">Available 24 hours a day</CyanBar>
+        <p className="mt-6 max-w-xl text-white/80">
+          Water does not follow a schedule. Request help through the form any time.
+          Crews are dispatched across Milwaukee County and Waukesha County based on
+          location and urgency. A live phone line is coming soon.
+        </p>
+        <p className="mt-4 text-sm font-semibold text-cyan">{site.phoneLabel}</p>
+        <CtaLink href="/contact" className="mt-8">
+          Get emergency help now
+        </CtaLink>
       </div>
     </section>
   );

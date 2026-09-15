@@ -11,8 +11,8 @@ export default function PrivacyPage() {
   return (
     <article className="bg-white">
       <div className="container-site max-w-3xl py-16 prose-restore">
-        <p className="eyebrow">Legal</p>
-        <h1 className="section-title mt-3">Privacy policy</h1>
+        <p className="text-[11px] font-extrabold uppercase tracking-[0.16em] text-cyan">Legal</p>
+        <h1 className="display mt-3 text-[40px] text-charcoal">Privacy policy</h1>
         <p className="mt-6">
           Milwaukee Water Damage Restoration operates this website at {site.url}.
           The office address is {site.address.line}. We do not publish a phone

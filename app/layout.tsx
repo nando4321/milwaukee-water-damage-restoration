@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Outfit } from "next/font/google";
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
+import { HotlineWidget } from "@/components/HotlineWidget";
 import { JsonLd } from "@/components/JsonLd";
 import { site } from "@/lib/site";
 import "./globals.css";
@@ -45,11 +46,12 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html lang="en" className={`${outfit.variable} h-full antialiased`}>
-      <body className="flex min-h-full flex-col bg-white font-sans text-ink">
+      <body className="flex min-h-full flex-col bg-white font-sans text-charcoal">
         <JsonLd />
         <Header />
         <main className="flex-1">{children}</main>
         <Footer />
+        <HotlineWidget />
       </body>
     </html>
   );

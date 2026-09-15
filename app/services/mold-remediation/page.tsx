@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Image from "next/image";
-import { CtaBanner, EmergencyBand } from "@/components/CtaBanner";
+import { EmergencyBand } from "@/components/CtaBanner";
 import { PageHero } from "@/components/PageHero";
 
 export const metadata: Metadata = {
@@ -58,26 +58,18 @@ export default function MoldPage() {
     <>
       <PageHero
         eyebrow="Mold remediation"
-        title="Careful removal after water damage"
-        body="Mold grows fast in damp spaces and often takes hold behind walls or under floors. We find the moisture source, contain the area, and remove what water left behind — in Milwaukee County and Waukesha County only."
+        title="Mold remediation in Greater Milwaukee"
+        bar="Safe, thorough mold removal for homes and businesses"
+        body="Mold grows fast in damp spaces and often takes hold behind walls or under floors. We find the moisture source, contain the area, and remove what water left behind."
         image="/images/mold-remediation.jpg"
         imageAlt="Placeholder photo for mold remediation"
       />
-      <section className="bg-white">
-        <div className="container-site py-16">
-          <p className="max-w-3xl text-lg leading-8 text-muted">
-            This service is for water-related mold. If a leak, flood, or condensation
-            problem started the growth, we treat the moisture first so remediation is not
-            a temporary wipe-down.
-          </p>
-        </div>
-      </section>
       <section className="bg-paper">
         <div className="container-site grid gap-8 py-16 md:grid-cols-2">
           {blocks.map((block) => (
-            <article key={block.title} className="rounded-2xl border border-line bg-white p-7">
-              <h2 className="text-2xl font-semibold text-navy">{block.title}</h2>
-              <p className="mt-2 text-sm font-medium text-navy/70">{block.lead}</p>
+            <article key={block.title} className="bg-white p-7">
+              <h2 className="display text-[26px] text-charcoal">{block.title}</h2>
+              <p className="mt-2 text-sm font-semibold uppercase text-navy">{block.lead}</p>
               <ul className="prose-restore mt-5">
                 {block.points.map((point) => (
                   <li key={point}>{point}</li>
@@ -89,7 +81,7 @@ export default function MoldPage() {
       </section>
       <section className="bg-white">
         <div className="container-site grid items-center gap-10 py-16 lg:grid-cols-2">
-          <div className="relative aspect-[4/3] overflow-hidden rounded-2xl">
+          <div className="relative aspect-[4/3] overflow-hidden">
             <Image
               src="/images/drying-equipment.jpg"
               alt="Placeholder photo of moisture tracking equipment"
@@ -99,19 +91,14 @@ export default function MoldPage() {
             />
           </div>
           <div>
-            <h2 className="section-title">Moisture first, then removal</h2>
+            <h2 className="display text-[32px] text-charcoal">Moisture first, then removal</h2>
             <p className="mt-4 leading-7 text-muted">
               Mold almost always points back to a water problem. We do not close a
-              cavity until readings show the structure can stay dry. That is how we
-              keep the job from coming back a month later.
+              cavity until readings show the structure can stay dry.
             </p>
           </div>
         </div>
       </section>
-      <CtaBanner
-        title="Schedule a mold inspection"
-        body="Hidden growth behind a wet wall is common. An inspection maps the source before anything is opened."
-      />
       <EmergencyBand />
     </>
   );

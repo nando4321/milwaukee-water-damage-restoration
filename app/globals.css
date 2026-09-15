@@ -2,25 +2,26 @@
 
 :root {
   --navy: #061e60;
-  --navy-deep: #041448;
-  --navy-mid: #0a2a7a;
+  --navy-deep: #061e60;
   --cyan: #1bbdff;
   --cyan-hover: #49cbff;
-  --ink: #1c2433;
-  --muted: #5c6778;
-  --paper: #f3f6fb;
-  --line: #d5deea;
+  --blue: #2ea3f2;
+  --black: #000000;
+  --charcoal: #262626;
+  --muted: #666666;
+  --paper: #f7f7f7;
+  --line: #e5e5e5;
   --background: #ffffff;
-  --foreground: #1c2433;
+  --foreground: #262626;
 }
 
 @theme inline {
   --color-navy: var(--navy);
   --color-navy-deep: var(--navy-deep);
-  --color-navy-mid: var(--navy-mid);
   --color-cyan: var(--cyan);
   --color-cyan-hover: var(--cyan-hover);
-  --color-ink: var(--ink);
+  --color-blue: var(--blue);
+  --color-charcoal: var(--charcoal);
   --color-muted: var(--muted);
   --color-paper: var(--paper);
   --color-line: var(--line);
@@ -35,48 +36,61 @@ html {
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
+  background: #fff;
+  color: var(--charcoal);
   font-family: var(--font-outfit), ui-sans-serif, system-ui, sans-serif;
-  font-feature-settings: "ss01" on;
 }
 
 ::selection {
   background: #1bbdff;
-  color: #041448;
+  color: #061e60;
 }
 
 .container-site {
-  width: min(1120px, calc(100% - 2rem));
+  width: min(1180px, calc(100% - 2.5rem));
   margin-inline: auto;
 }
 
 .container-wide {
-  width: min(1200px, calc(100% - 2rem));
+  width: min(1320px, calc(100% - 2.5rem));
   margin-inline: auto;
 }
 
-.eyebrow {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-  font-size: 0.78rem;
-  font-weight: 600;
-  letter-spacing: 0.14em;
+.display {
+  font-weight: 800;
   text-transform: uppercase;
-  color: var(--cyan);
+  letter-spacing: -0.035em;
+  line-height: 0.92;
 }
 
-.section-title {
-  font-size: clamp(1.75rem, 3.4vw, 2.75rem);
-  line-height: 1.12;
-  font-weight: 600;
-  letter-spacing: -0.03em;
-  color: var(--navy);
+.cyan-bar {
+  display: inline-block;
+  background: #1bbdff;
+  color: #061e60;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  line-height: 1.2;
+  padding: 0.55rem 0.9rem;
+}
+
+.welcome-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.7rem;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.16);
+  color: #fff;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  padding: 0.35rem 0.4rem 0.35rem 1rem;
+  backdrop-filter: blur(6px);
 }
 
 .prose-restore p {
-  color: var(--muted);
+  color: #666;
   line-height: 1.75;
 }
 
@@ -88,7 +102,7 @@ body {
 .prose-restore li {
   position: relative;
   padding-left: 1.7rem;
-  color: var(--ink);
+  color: #262626;
   line-height: 1.55;
 }
 
@@ -100,8 +114,8 @@ body {
   width: 1.05rem;
   height: 1.05rem;
   border-radius: 999px;
-  background: color-mix(in srgb, var(--cyan) 18%, white);
-  box-shadow: inset 0 0 0 1.5px var(--cyan);
+  background: color-mix(in srgb, #1bbdff 18%, white);
+  box-shadow: inset 0 0 0 1.5px #1bbdff;
 }
 
 .prose-restore li::after {
@@ -111,7 +125,7 @@ body {
   top: 0.58rem;
   width: 0.42rem;
   height: 0.24rem;
-  border-left: 2px solid var(--navy);
-  border-bottom: 2px solid var(--navy);
+  border-left: 2px solid #061e60;
+  border-bottom: 2px solid #061e60;
   transform: rotate(-45deg);
 }

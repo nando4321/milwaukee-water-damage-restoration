@@ -1,17 +1,14 @@
-import Link from "next/link";
+import { CtaLink } from "@/components/Brand";
 import type { ReactNode } from "react";
 
-type Variant = "primary" | "secondary" | "ghost" | "light";
+type Variant = "primary" | "secondary" | "ghost" | "light" | "black";
 
-const styles: Record<Variant, string> = {
-  primary:
-    "bg-cyan text-navy-deep hover:bg-cyan-hover shadow-[0_8px_24px_rgba(27,189,255,0.28)]",
-  secondary:
-    "border-2 border-white/80 bg-transparent text-white hover:bg-white hover:text-navy",
-  ghost:
-    "border-2 border-navy bg-transparent text-navy hover:bg-navy hover:text-white",
-  light:
-    "bg-white text-navy hover:bg-paper",
+const map: Record<Variant, "cyan" | "black" | "white"> = {
+  primary: "cyan",
+  secondary: "white",
+  ghost: "white",
+  light: "white",
+  black: "black",
 };
 
 export function Button({
@@ -26,11 +23,8 @@ export function Button({
   className?: string;
 }) {
   return (
-    <Link
-      href={href}
-      className={`inline-flex items-center justify-center rounded-md px-5 py-3 text-[15px] font-semibold tracking-tight transition ${styles[variant]} ${className}`}
-    >
+    <CtaLink href={href} variant={map[variant]} className={className}>
       {children}
-    </Link>
+    </CtaLink>
   );
 }

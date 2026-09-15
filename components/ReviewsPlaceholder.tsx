@@ -1,3 +1,5 @@
+import { WelcomeBadge } from "@/components/Brand";
+
 const placeholders = [
   {
     quote:
@@ -6,7 +8,7 @@ const placeholders = [
   },
   {
     quote:
-      "We are not displaying star ratings or invented testimonials. This card is a labeled placeholder.",
+      "These cards are labeled placeholders. We are not showing star ratings or invented testimonials.",
     name: "Commercial review",
   },
   {
@@ -18,23 +20,27 @@ const placeholders = [
 
 export function ReviewsPlaceholder() {
   return (
-    <section className="bg-paper">
-      <div className="container-site py-20">
-        <p className="eyebrow">Hear from our clients</p>
-        <h2 className="section-title mt-3 max-w-2xl">Reviews coming soon</h2>
-        <p className="mt-4 max-w-2xl text-muted">
-          Homeowners and business owners often mention clear updates, on-time crews, and
-          detailed documentation. We will only publish real reviews — these cards are
-          placeholders, not Google ratings or fabricated quotes.
+    <section className="bg-white py-20">
+      <div className="container-wide text-center">
+        <WelcomeBadge inverted>Welcome to Milwaukee Water Damage Restoration</WelcomeBadge>
+        <h2 className="display mx-auto mt-6 max-w-4xl text-[40px] text-charcoal md:text-[64px]">
+          Hear from our clients
+        </h2>
+        <p className="mx-auto mt-4 max-w-2xl text-muted">
+          Reviews coming soon. Homeowners and business owners often mention clear
+          updates, on-time crews, and detailed documentation. We will only publish
+          real reviews — not Google ratings we do not have yet.
         </p>
-        <div className="mt-10 grid gap-6 md:grid-cols-3">
+        <div className="mt-12 grid gap-6 text-left md:grid-cols-3">
           {placeholders.map((item) => (
-            <figure key={item.name} className="rounded-2xl border border-dashed border-navy/20 bg-white p-6">
-              <p className="text-[11px] font-semibold uppercase tracking-[0.16em] text-cyan">
-                Placeholder
+            <figure key={item.name} className="border border-line bg-white p-7 shadow-sm">
+              <p className="text-[11px] font-extrabold uppercase tracking-[0.16em] text-cyan">
+                Reviews coming soon
               </p>
-              <blockquote className="mt-3 text-[15px] leading-7 text-ink">{item.quote}</blockquote>
-              <figcaption className="mt-5 text-sm font-semibold text-navy">{item.name}</figcaption>
+              <blockquote className="mt-4 text-[15px] leading-7 text-muted">{item.quote}</blockquote>
+              <figcaption className="mt-6 text-sm font-extrabold uppercase text-charcoal">
+                {item.name}
+              </figcaption>
             </figure>
           ))}
         </div>

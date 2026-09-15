@@ -9,8 +9,8 @@ export function ContactForm() {
   const [state, formAction, pending] = useActionState(submitEstimate, initial);
 
   return (
-    <form action={formAction} className="rounded-2xl border border-line bg-white p-6 shadow-sm md:p-8">
-      <h2 className="text-2xl font-semibold text-navy">Get a free quote</h2>
+    <form action={formAction} className="bg-white p-6 md:p-8">
+      <h2 className="display text-[28px] text-charcoal">Get a free quote</h2>
       <p className="mt-2 text-sm leading-6 text-muted">
         Share a few details about the property and the water problem. A team member will
         review the request and follow up. Phone coming soon — this form is the current
@@ -28,7 +28,7 @@ export function ContactForm() {
             name="name"
             required
             autoComplete="name"
-            className="rounded-md border border-line px-3 py-2.5 font-normal text-ink outline-none ring-cyan focus:ring-2"
+            className="rounded-md border border-line px-3 py-2.5 font-normal text-charcoal outline-none ring-cyan focus:ring-2"
           />
         </label>
         <label className="grid gap-1.5 text-sm font-medium text-navy">
@@ -37,7 +37,7 @@ export function ContactForm() {
             name="phone"
             required
             autoComplete="tel"
-            className="rounded-md border border-line px-3 py-2.5 font-normal text-ink outline-none ring-cyan focus:ring-2"
+            className="rounded-md border border-line px-3 py-2.5 font-normal text-charcoal outline-none ring-cyan focus:ring-2"
           />
         </label>
         <label className="grid gap-1.5 text-sm font-medium text-navy md:col-span-2">
@@ -47,7 +47,7 @@ export function ContactForm() {
             type="email"
             required
             autoComplete="email"
-            className="rounded-md border border-line px-3 py-2.5 font-normal text-ink outline-none ring-cyan focus:ring-2"
+            className="rounded-md border border-line px-3 py-2.5 font-normal text-charcoal outline-none ring-cyan focus:ring-2"
           />
         </label>
         <label className="grid gap-1.5 text-sm font-medium text-navy">
@@ -55,7 +55,7 @@ export function ContactForm() {
           <input
             name="city"
             required
-            className="rounded-md border border-line px-3 py-2.5 font-normal text-ink outline-none ring-cyan focus:ring-2"
+            className="rounded-md border border-line px-3 py-2.5 font-normal text-charcoal outline-none ring-cyan focus:ring-2"
           />
         </label>
         <label className="grid gap-1.5 text-sm font-medium text-navy">
@@ -64,7 +64,7 @@ export function ContactForm() {
             name="county"
             required
             defaultValue=""
-            className="rounded-md border border-line px-3 py-2.5 font-normal text-ink outline-none ring-cyan focus:ring-2"
+            className="rounded-md border border-line px-3 py-2.5 font-normal text-charcoal outline-none ring-cyan focus:ring-2"
           >
             <option value="" disabled>
               Select county
@@ -79,7 +79,7 @@ export function ContactForm() {
             name="service"
             required
             defaultValue=""
-            className="rounded-md border border-line px-3 py-2.5 font-normal text-ink outline-none ring-cyan focus:ring-2"
+            className="rounded-md border border-line px-3 py-2.5 font-normal text-charcoal outline-none ring-cyan focus:ring-2"
           >
             <option value="" disabled>
               Select a service
@@ -95,7 +95,7 @@ export function ContactForm() {
             name="message"
             required
             rows={5}
-            className="rounded-md border border-line px-3 py-2.5 font-normal text-ink outline-none ring-cyan focus:ring-2"
+            className="rounded-md border border-line px-3 py-2.5 font-normal text-charcoal outline-none ring-cyan focus:ring-2"
             placeholder="Burst pipe, sump failure, appliance leak, hidden moisture, rebuild after drying…"
           />
         </label>
@@ -103,7 +103,7 @@ export function ContactForm() {
       <button
         type="submit"
         disabled={pending}
-        className="mt-6 inline-flex w-full items-center justify-center rounded-md bg-cyan px-5 py-3 text-[15px] font-semibold text-navy-deep hover:bg-cyan-hover disabled:opacity-70 md:w-auto"
+        className="mt-6 inline-flex items-center justify-center rounded-full bg-cyan px-6 py-3 text-[13px] font-extrabold uppercase tracking-[0.06em] text-navy hover:bg-cyan-hover disabled:opacity-70"
       >
         {pending ? "Sending…" : "Submit estimate request"}
       </button>

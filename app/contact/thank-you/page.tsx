@@ -13,8 +13,10 @@ export default function ThankYouPage() {
   return (
     <section className="bg-paper">
       <div className="container-site max-w-2xl py-24 text-center">
-        <p className="eyebrow mx-auto">Demo confirmation</p>
-        <h1 className="mt-4 text-4xl font-semibold tracking-tight text-navy">
+        <p className="text-[11px] font-extrabold uppercase tracking-[0.16em] text-cyan">
+          Demo confirmation
+        </p>
+        <h1 className="display mt-4 text-[40px] text-charcoal">
           We received your estimate request
         </h1>
         <p className="mt-5 leading-8 text-muted">
@@ -25,7 +27,7 @@ export default function ThankYouPage() {
         <p className="mt-4 text-sm text-muted">Office: {site.address.line}</p>
         <div className="mt-8 flex justify-center gap-3">
           <Button href="/">Back to home</Button>
-          <Button href="/services" variant="ghost">
+          <Button href="/services" variant="black">
             Review services
           </Button>
         </div>
